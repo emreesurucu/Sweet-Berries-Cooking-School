@@ -40,6 +40,14 @@ a{
     height: 40px;
 }
 
+.hamburger-icon{
+    display: none;
+}
+
+#hamburger{
+    display: none;
+}
+
 .right-btn{
     border: none;
     text-align: center;
@@ -162,4 +170,169 @@ a{
     justify-content: center;
     padding: 24px 0 24px 0;
     background-color: #FEBD2F;
+}
+
+@media (max-width:768px) {
+    
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px auto auto 80px;
+        grid-template-areas: 
+        "header header"
+        "first-section first-section"
+        "second-section second-section"
+        "footer footer";
+    }
+
+    .header{
+        margin: 0 10% 0 10%;
+    }
+
+    .first-section{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .first-section h1{
+        margin-right: 30px;
+        margin-left: 30px;
+        width: 608px;
+        font-size: 48px;
+        text-align: center;
+    }
+    
+    .first-section p{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        width: 600px;
+    
+    }
+
+    .first-section img{
+        margin-top: 20px;
+        align-self: center;
+        margin-bottom: 72px;
+
+    }
+
+    .second-section{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 64px;
+        margin:  5% 12% 15% 12%;
+    
+    }
+
+    .tag{
+        left: 170.5px;
+        bottom: 260.3px;
+    }
+
+    .card1{
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px 0 10px;
+    }
+    
+    .card1 h2{
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .card-container h3{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    
+    .card-container p{
+        font-size: 16px;
+        margin-top: 16px;
+    
+    }
+    
+    .card-container a{
+        margin-top: 24px;
+    
+    
+}
+
+@media (max-width: 468px) {
+
+    .nav-links a{
+        display: none;
+    }
+
+    .right-btn{
+        display: none;
+    }
+
+    .hamburger-icon{
+        display: block;
+    }
+
+    #hamburger:checked .nav-links a{
+        display: flex;
+    }
+
+    .nav-links a{
+        position: absolute;
+        top: 75px;
+        left: 0;
+        background-color: aqua;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .first-section h1{
+        margin-right: 45px;
+        width: 400px;
+        font-size: 36px;
+    }
+    
+    .first-section p{
+        font-size: 18px;
+        width: 342px;
+        height: 120px;
+        margin-left: 35px;
+        text-align: center;
+        
+    
+    }
+
+    .first-section img{
+        width: 342px;
+        height: 220px;
+    }
+
+    .second-section{
+        grid-area: second-section;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 40px;
+        row-gap: 64px;
+        margin:  3% 12% 5% 12%;
+    
+    }
+
+    .card1{
+        width: 342px;
+        height: 132px;
+    }
+    .card1 h2{
+        color: #000000;
+        font-family: 'Roboto Serif';
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .tag{
+        left: 260.5px;
+        bottom: 200.3px;
+    }
+
 }
