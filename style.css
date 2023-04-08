@@ -10,6 +10,7 @@ a{
     text-decoration: none;
 }
 
+/* Superb! You’ve used grid template areas correctly! */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -21,13 +22,14 @@ a{
     "footer footer footer footer";
 }
 
+/* Beautiful work on using CSS Grid and flex box together! */
 .header{
     display: flex;
     grid-area: header;
     justify-content: space-around;
     align-items: center;
 }
-
+/* Great work on being detailed oriented and adding the right fonts to each component of the website. */
 .nav-links a{
     color: #000000;
     font-family: 'Roboto';
@@ -35,6 +37,7 @@ a{
     font-weight: 500;
 }
 
+/* The images aren’t responsive. You can give a % value to an image’s width to make it responsive to the screen size. */
 .header img{
     width: 164.03px;
     height: 40px;
@@ -58,7 +61,7 @@ a{
     color: white;
     padding: 14px 24px 15px 24px;
 }
-
+/* Nice work on using Flexbox properly to create some of the components. */
 .first-section{
     grid-area: first-section;
     display: flex;
@@ -172,6 +175,7 @@ a{
     background-color: #FEBD2F;
 }
 
+/* Great work on making your project responsive using media queries properly! */
 @media (max-width:768px) {
     
     .grid-container{
@@ -259,6 +263,9 @@ a{
     
 }
 
+/* Good job on hiding the regular navbar and showing the hamburger icon on smaller screen sizes.
+
+The hamburger menu is not functional. */
 @media (max-width: 468px) {
 
     .nav-links a{
